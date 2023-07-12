@@ -21,24 +21,9 @@
           <mat-cell mat-cell *matCellDef="let element"> {{element.cantidad_bultos}} </mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="zona_destino" >
-          <mat-header-cell *matHeaderCellDef mat-sort-header="zona_destino"> ZONA DESTINO  </mat-header-cell>
-          <mat-cell mat-cell *matCellDef="let element"> {{element.zona_destino}} </mat-cell>
-        </ng-container>
-
         <ng-container matColumnDef="fecha_salida" >
           <mat-header-cell *matHeaderCellDef mat-sort-header="fecha_salida"> FECHA SALIDA  </mat-header-cell>
           <mat-cell mat-cell *matCellDef="let element"> {{element.fecha_salida}} </mat-cell>
-        </ng-container>
-
-        <ng-container matColumnDef="fecha_estimada_entrega" >
-          <mat-header-cell *matHeaderCellDef mat-sort-header="fecha_estimada_entrega"> FECHA ESTIMADA ENTREGA  </mat-header-cell>
-          <mat-cell mat-cell *matCellDef="let element"> {{element.fecha_estimada_entrega}} </mat-cell>
-        </ng-container>
-
-        <ng-container matColumnDef="fecha_entrega" >
-          <mat-header-cell *matHeaderCellDef mat-sort-header="fecha_entrega"> FECHA ENTREGA  </mat-header-cell>
-          <mat-cell mat-cell *matCellDef="let element"> {{element.fecha_entrega}} </mat-cell>
         </ng-container>
 
         <ng-container matColumnDef="estado_entrega" >

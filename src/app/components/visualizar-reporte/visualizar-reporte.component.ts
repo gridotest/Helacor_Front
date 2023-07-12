@@ -18,7 +18,7 @@ import {MatBottomSheet, MatBottomSheetRef} from '@angular/material/bottom-sheet'
 })
 export class VisualizarReporteComponent implements AfterViewInit{
 
-  displayedColumns: string[] = ['empresa_encargada', 'patente_vehiculo', 'cantidad_bultos', 'zona_destino','fecha_salida','fecha_estimada_entrega','fecha_entrega','estado_entrega'];
+  displayedColumns: string[] = ['empresa_encargada', 'patente_vehiculo', 'cantidad_bultos','fecha_salida','estado_entrega'];
   dataSource = new MatTableDataSource<Reporte>();
   
   excelData : any;
