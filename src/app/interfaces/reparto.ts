@@ -1,4 +1,4 @@
-export interface Reporte{
+export interface Reparto{
     id? : number;
     empresa_encargada: string,
     patente_vehiculo: string,

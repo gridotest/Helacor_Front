@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { VisualizarReporteComponent } from './components/visualizar-reporte/visualizar-reporte.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,11 +17,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {ReactiveFormsModule} from '@angular/forms';
+import { ListRepartosComponent } from './components/list-repartos/list-repartos.component';
+import { ViewRepartoComponent } from './components/view-reparto/view-reparto.component';
+import { DialogComponent } from './components/dialog/dialog.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    VisualizarReporteComponent,
+    ListRepartosComponent,
+    ViewRepartoComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +49,9 @@ import {ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    DialogComponent
+  ]
 })
 export class AppModule { }

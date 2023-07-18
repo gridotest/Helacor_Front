@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
-import { VisualizarReporteComponent } from './visualizar-reporte/visualizar-reporte.component';
+import { ListRepartosComponent } from './list-repartos/list-repartos.component';
 
 
 const routes: Routes = [
@@ -9,9 +9,9 @@ const routes: Routes = [
     path: '',
     component: AdminComponent,
     children: [
-      { path: '', redirectTo: 'reporte', pathMatch: 'full' },
+      { path: '', redirectTo: 'reparto', pathMatch: 'full' },
       { path: 'home', component: AdminComponent, pathMatch: 'full', },
-      { path: 'reporte', component: VisualizarReporteComponent },
+      { path: 'reparto', component: ListRepartosComponent },
      
     ]
   },

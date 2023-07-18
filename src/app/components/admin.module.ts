@@ -4,6 +4,7 @@ import { AdminRoutingModule } from './admin.routing';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 @NgModule({

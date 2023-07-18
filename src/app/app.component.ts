@@ -20,7 +20,7 @@ export class AppComponent implements OnInit{
   loadingPercent = 0;
   intervalId = {} as any;
 
-  title = 'Reporte';
+  title = 'Reparto';
   ngOnInit() {
     this.toogleSidenav();
   }

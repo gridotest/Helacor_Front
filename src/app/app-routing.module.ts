@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { VisualizarReporteComponent } from './components/visualizar-reporte/visualizar-reporte.component';
+//Components
+import { ListRepartosComponent } from './components/list-repartos/list-repartos.component';
+import { ViewRepartoComponent } from './components/view-reparto/view-reparto.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path : 'reporte', component: VisualizarReporteComponent },
+  { path: '', redirectTo: 'reparto', pathMatch: 'full' },
+  { path : 'reparto', component: ListRepartosComponent },
+  { path: 'view', component: ViewRepartoComponent },
 ];
 
 @NgModule({
